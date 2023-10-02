@@ -192,7 +192,7 @@ def get_readable_message():
             msg += f"\n<b>Size:</b> {download.size()}"
         msg += f"\n<b>Elapsed:</b> {get_readable_time(time() - download.message.date.timestamp())}\n"
         msg += f"<b>User :</b> {source(download)}\n"
-        msg += f"\n<b>Cancel :</b> /stop_{download.gid()[:8]}\n\n"
+        msg += f"<b>Cancel :</b> /stop_{download.gid()[:8]}\n\n"
     if len(msg) == 0:
         return None, None
     dl_speed = 0
@@ -211,11 +211,11 @@ def get_readable_message():
         buttons.ibutton(f"{PAGE_NO}/{PAGES}", "status ref")
         buttons.ibutton("Next", "status nex")
         button = buttons.build_menu(3)
-    msg += f"<b>• Total Tasks</b>: {tasks}{bmax_task}"
-    msg += f"\n<b>• Bot uptime</b>: {currentTime}"
-    msg += f"\n<b>• Free disk space</b>: {get_readable_file_size(disk_usage('/usr/src/app/downloads/').free)}"
-    msg += f"\n<b>• Uploading speed</b>: {get_readable_file_size(up_speed)}/s"
-    msg += f"\n<b>• Downloading speed</b>: {get_readable_file_size(dl_speed)}/s"
+    msg += f"<b>• Tᴏᴛᴀʟ Tᴀsᴋs</b>: {tasks}{bmax_task}"
+    msg += f"\n<b>• Bᴏᴛ ᴜᴘᴛɪᴍᴇ</b>: {currentTime}"
+    msg += f"\n<b>• Fʀᴇᴇ Dɪsᴋ</b>: {get_readable_file_size(disk_usage('/usr/src/app/downloads/').free)}"
+    msg += f"\n<b>• Uᴘʟᴏᴀᴅɪɴɢ sᴘᴇᴇᴅ</b>: {get_readable_file_size(up_speed)}/s"
+    msg += f"\n<b>• Dᴏᴡɴʟᴏᴀᴅɪɴɢ sᴘᴇᴇᴅ</b>: {get_readable_file_size(dl_speed)}/s"
     return msg, button
 
 
