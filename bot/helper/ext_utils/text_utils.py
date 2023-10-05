@@ -73,31 +73,5 @@ uset_display_dict = {
             }
 
 nsfw_keywords = [
-    "xxx",
     "porn",
-    "onlyfans",
-    "nsfw",
-    "Brazzers",
-    "adult",
-    "xnxx",
-    "xvideos",
-    "nsfwcherry",
-    "hardcore",
-    "Pornhub",
-    "xvideos2"
-    "youporn",
-    "pornrip",
-    "playboy",
-    "hentai",
-    "erotica",
-    "blowjob",
-    "redtube",
-    "stripchat",
-    "camgirl",
-    "nude",
-    "fetish",
-    "cuckold",
-    "orgy",
-    "horny",
-    "swingers",
 ]
